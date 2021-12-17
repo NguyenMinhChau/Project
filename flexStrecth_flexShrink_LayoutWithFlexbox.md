@@ -1,0 +1,181 @@
+## align-items: strecth - Hai phần tử có chiều cao bằng nhau khi sử dụng flex
+```sh
+--HTML--
+ <div class="badge">
+    <div class="badge-icon"></div>
+    <div class="badge-text">Hello anh em</div>
+</div>
+--CSS--
+.badge{
+    display: flex;
+    margin-top: 12px;
+    background-color: #ccc;
+}
+.badge-icon{
+    width: 23px; 
+    background-color: red;
+    border-radius: 50%;
+}
+.badge-text{
+    padding: 4px;
+}
+```
+## Flex-shrink
+```sh
+Dùng để cố định kích thước của phần tử khi dùng flex-box thường dùng chung cới flex: 1
+```
+## Dàn Layout với flex-box
+```sh
+- Để làm cho các card bằng nhau ta cần xác định thành phần nào chứa những card này và cho card ta muốn đẩy về dưới cùng/trên cùng có `margin-x: auto`
+- Sau khi đẩy phần tử đó xuống dưới cùng/trên cùng thì ta sẽ cho các card còn lại chiếm hết phần còn lại bằng cách định `flex: 1`
+- Đối với hình ảnh ta nên dùng `flex-shrink: 0` để cố định kích thước, không cho hình ảnh scale lại
+--HTML--
+<div class="cards">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="card-image">
+        <div class="card-content">
+            <div class="card-top">
+                <div class="card-title">
+                    <h3 class="card-title-text">2021 World Champs Gaming Warzone</h3>
+                </div>
+                <div class="card-user-info">
+                    <div class="card-avatar">
+                        <img src="https://images.unsplash.com/photo-1639402476170-f2bdaa623069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-actions">
+                            <div class="card-name">Tam Tran</div>
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <div class="card-game-title">Call of duty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="card-live-content">
+                    <ion-icon name="wifi"></ion-icon>
+                    <span class="card-live-text">Live</span>
+                </div>
+                <div class="card-watching-content">
+                    <span class="card-watching-text">5.0k watching</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+--CSS--
+.cards{
+    --spacing: 15px;
+    --columns: 4;
+    margin-top: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+.card{
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    display: flex;
+    flex-direction: column;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block; /*Xử lý khoảng trắng bên dưới hình ảnh*/
+    flex-shrink: 0; /*Cố định kích thước*/
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.card-top{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.card-title{
+    margin-bottom: 30px;
+}
+.card-title-text{
+    font-weight: 530;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.card-user-info{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.avatar-user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.card-info{
+    margin-left: 12px;
+    flex: 1;
+}
+.card-actions{
+    display: flex;
+    align-items: center;
+}
+
+.card-actions ion-icon{
+    margin-left: 5px;
+    color: yellowgreen;
+}
+
+.card-name{
+    font-size: -14px;
+    font-weight: 500;
+}
+.card-game-title{
+    font-size: 12px;
+    color: rgb(192, 192, 192);
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 20px;
+    margin-top: auto;
+}
+.card-live-content{
+    background-color: rgb(250, 72, 72);
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 10px;
+}
+.card-watching-text{
+    color: rgb(197, 197, 197);
+}
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .cards{
+        --columns: 2;
+    }
+}
+
+@media screen and  (max-width: 46.25em) {
+    .cards{
+        --columns: 1;
+    }
+}
+```
+[Tiếp theo >>](./inherit+initial+unset_position+visibility_opacity_lineargradient.md)
+[<< Quay về](./em+rem_CSSAutomic_vw_loading_ribbon_widthAuto_width100_IntrinsicSize.md)

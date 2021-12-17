@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.icon-container{
+
+}
+.fas{
+
+}
+.fa-exclamation-triangle{
+
+}
+.content{
+
+}
+.icon-close{
+
+}
+.fa-times{
+
+}
+.fas.fa-exclamation-triangle{
+
+}
+.fas.fa-times{
+
+}

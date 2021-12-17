@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification{
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    border-top: 4px solid red;
+    border-radius: 4px;
+    width: 500px;
+    position: relative;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+}
+.content{
+    padding: 10px;
+    text-align: center;
+}
+.icon-close{
+    cursor: pointer;
+    color: red;
+}
+.icon-close i{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 20px;
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học HTML CSS</title>
+    <script src="https://kit.fontawesome.com/a7b0f58175.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class='notification'>
+        <div class="icon-container">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p>Thông báo</p>
+        </div>
+        <div class="content">
+            <h3>Bạn đã đăng nhập thành công</h3>
+            <p>Chào mừng bạn đến với trang quản trị</p>
+        </div>
+        <div class="icon-close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="loading">
+        <div class="loading-item" style="--value: 1"></div>
+        <div class="loading-item" style="--value: 2"></div>
+        <div class="loading-item" style="--value: 3"></div>
+        <div class="loading-item" style="--value: 4"></div>
+        <div class="loading-item" style="--value: 5"></div>
+        <div class="loading-item" style="--value: 6"></div>
+        <div class="loading-item" style="--value: 7"></div>
+        <div class="loading-item" style="--value: 8"></div>
+    </div>
+    <div class="ribbon">Đây là ribbon chú thích</div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder=" "/>
+        <label for="name" class="form-label">Họ và tên</label>
+    </div>
+    <div class="menu">
+        <ul class="list-container">
+            <li class="list-item active">
+                <a href="#" class="link-item">
+                    <ion-icon name="home-outline"></ion-icon> Dashboard
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#" class="link-item">
+                    <ion-icon name="cube-outline"></ion-icon> Contacts
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#" class="link-item">
+                    <ion-icon name="information-circle-outline"></ion-icon> Information
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="box"><ion-icon name="airplane-outline"></ion-icon></div>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="card-image">
+            <div class="card-content">
+                <div class="card-top">
+                    <div class="card-title">
+                        <h3 class="card-title-text">2021 World Champs Gaming Warzone</h3>
+                    </div>
+                    <div class="card-user-info">
+                        <div class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1639402476170-f2bdaa623069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-actions">
+                                <div class="card-name">Tam Tran</div>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <div class="card-game-title">Call of duty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="card-live-content">
+                        <ion-icon name="wifi"></ion-icon>
+                        <span class="card-live-text">Live</span>
+                    </div>
+                    <div class="card-watching-content">
+                        <span class="card-watching-text">5.0k watching</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="card-image">
+            <div class="card-content">
+                <div class="card-top">
+                    <div class="card-title">
+                        <h3 class="card-title-text">2021 World Champs Gaming Warzone</h3>
+                    </div>
+                    <div class="card-user-info">
+                        <div class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1639402476170-f2bdaa623069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-actions">
+                                <div class="card-name">Tam Tran</div>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <div class="card-game-title">Call of duty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="card-live-content">
+                        <ion-icon name="wifi"></ion-icon>
+                        <span class="card-live-text">Live</span>
+                    </div>
+                    <div class="card-watching-content">
+                        <span class="card-watching-text">5.0k watching</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="card-image">
+            <div class="card-content">
+                <div class="card-top">
+                    <div class="card-title">
+                        <h3 class="card-title-text">2021 World Champs Gaming Warzone</h3>
+                    </div>
+                    <div class="card-user-info">
+                        <div class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1639402476170-f2bdaa623069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-actions">
+                                <div class="card-name">Tam Tran</div>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <div class="card-game-title">Call of duty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="card-live-content">
+                        <ion-icon name="wifi"></ion-icon>
+                        <span class="card-live-text">Live</span>
+                    </div>
+                    <div class="card-watching-content">
+                        <span class="card-watching-text">5.0k watching</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="card-image">
+            <div class="card-content">
+                <div class="card-top">
+                    <div class="card-title">
+                        <h3 class="card-title-text">2021 World Champs Gaming Warzone 2021 World Champs Gaming Warzone 2021 World Champs Gaming Warzone</h3>
+                    </div>
+                    <div class="card-user-info">
+                        <div class="card-avatar">
+                            <img src="https://images.unsplash.com/photo-1639402476170-f2bdaa623069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                        </div>
+                        <div class="card-info">
+                            <div class="card-actions">
+                                <div class="card-name">Tam Tran</div>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <div class="card-game-title">Call of duty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="card-live-content">
+                        <ion-icon name="wifi"></ion-icon>
+                        <span class="card-live-text">Live</span>
+                    </div>
+                    <div class="card-watching-content">
+                        <span class="card-watching-text">5.0k watching</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <div class="dropdown-select">
+            <span class="dropdown-value">
+                <span>Figma </span>
+                <ion-icon name="caret-down-circle-outline"></ion-icon>
+            </span>
+        </div>
+        <div class="dropdown-list">
+            <div class="dropdown-item">Figma</div>
+            <div class="dropdown-item">AdobeXD</div>
+            <div class="dropdown-item">Photoshop</div>
+        </div>
+    </div>
+    <!-- CHƯA DÙNG LINEAR GRADIENT -->
+    <div class="demo-bg-image">
+        <div class="demo-content">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+        </div>
+        <div class="demo-content">
+            <ion-icon name="arrow-undo-outline"></ion-icon>
+        </div>
+    </div>
+    <!-- DÙNG LINEAR GRADIENT -->
+    <div class="demo-linear-gradient">
+        <div class="demo-lg-content">
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-down-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+            </div>
+            <div class="demo-lg-icon">
+                <ion-icon name="arrow-undo-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <div class="avatars">
+        <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar">
+        <img src="https://images.unsplash.com/photo-1639502189420-da0a34ad0cd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar">
+        <img src="https://images.unsplash.com/photo-1639680957169-ebff920c7e23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar">
+        <img src="https://images.unsplash.com/photo-1639678349557-ffe5bed73ce7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar">
+        <img src="https://images.unsplash.com/photo-1633113211821-6ac9c3d160a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar">
+        <div class="avatar avatar-number">+10</div>
+    </div>
+    <div class="table-content">
+        <table>
+            <thead>
+                <tr>
+                    <th>heading 1</th>
+                    <th>heading 2</th>
+                    <th>heading 3</th>
+                    <th>heading 4</th>
+                    <th>heading 5</th>
+                    <th>heading 6</th>
+                    <th>heading 7</th>
+                    <th>heading 8</th>
+                    <th>heading 9</th>
+                    <th>heading 10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="user-conten">
+                            <img src="https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="avatar-user">
+                            <span>Conten 1</span>
+                        </div>
+                    </td>
+                    <td>content 2</td>
+                    <td>content 3</td>
+                    <td>content 4</td>
+                    <td>content 5</td>
+                    <td>content 6</td>
+                    <td>content 7</td>
+                    <td>content 8</td>
+                    <td>content 9</td>
+                    <td>content 10</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="ghost-content">
+        <div class="ghost-container">
+            <div class="ghost-body">
+                <div class="ghost-eye"></div>
+                <div class="ghost-mounth"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slider-content">
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1639657742894-f77323974ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="image-item-slider">
+        </div>
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1639669047277-32640a26bdf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="image-item-slider">
+        </div>
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1639600862425-9af2d5d64fd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="image-item-slider">
+        </div>
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1639672197885-f2fd4922296e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="image-item-slider">
+        </div>
+        <div class="image-slider">
+            <img src="https://images.unsplash.com/photo-1639516510662-4c3a3e13feff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="" class="image-item-slider">
+        </div>
+    </div>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src='./assets/js/main.js'></script>
+</body>
+</html>
